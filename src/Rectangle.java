@@ -1,5 +1,5 @@
 public class Rectangle extends Shape implements java.io.Serializable {
-    String name = "Rctangle";
+    String name = "Rectangle";
     double length, width, area, perimeter;
 
     public Rectangle(double length, double width) {

@@ -1,4 +1,5 @@
 public class Square extends Rectangle {
+    String name = "Square";
     public Square(double side) {
         super(side, side); // set values of length and breadth in Rectangle class
         this.CalculateArea();

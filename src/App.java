@@ -3,7 +3,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         Shape c = new Circle(5);
         Shape r = new Rectangle(6, 7);
-        Rectangle sq = new Square(5);
+        Shape sq = new Square(5);
         Shape t = new Triangle(4, 5, 6, 6);
 
         //Serialize the shapes in a file
@@ -46,6 +46,14 @@ public class App {
                                    "side2: "+s2.side2+"\n"+
                                    "Area: "+s2.area+"\n"+
                                    "Perimeter: "+s2.perimeter);
+                break;
+                case "Square": Square s3 = (Square) o;
+                System.out.println("Shape: "+s3.name+"\n"+
+                                   "Length: "+s3.length+"\n"+
+                                   "Width: "+s3.width+"\n"+
+                                   "Area: "+s3.area+"\n"+
+                                   "Perimeter: "+s3.perimeter);
+                break;
             }
         }
         in.close(); //Close input stram
